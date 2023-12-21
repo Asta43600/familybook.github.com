@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/family.css">
+    <title>Family Record Book</title>
+</head>
+
+<body>
+    <div class="background"></div>
+    <header>
+        <h1>Family Record Book</h1>
+    </header>
+    
+    <main>
+        <section id="memory-book">
+            <h2>Add a Memory</h2>
+            <form id="memory-form">
+                <label for="year">Year:</label>
+                <input type="text" id="year" required>
+                
+                <label for="event">Event:</label>
+                <input type="text" id="event" required>
+                
+                <label for="description">Description:</label>
+                <textarea id="description" required></textarea>
+                
+                <button type="button" onclick="addMemory()">Add Memory</button>
+                <!-- ... (previous HTML code remains unchanged) -->
+
+<button onclick="sortMemories()">Sort Memories</button>
+<button onclick="restoreMemories()">Restore Memories</button>
+
+            </form>
+
+            <h2>Memory Book</h2>
+            <div id="memories-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Our Family</p>
+    </footer>
+
+    <script src="family.js"></script>
+</body>
+
+</html>
